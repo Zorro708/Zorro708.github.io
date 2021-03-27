@@ -1,0 +1,59 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+header{
+	background: #000;
+	width: 100%;
+	height: 90px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+}
+
+header p{
+	color: #fff;
+	font-size: 40px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+.chat_1{
+	margin-bottom: 20px;
+}
+
+body::-webkit-scrollbar{
+	background: #000;
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+	background: #fff;
+}
+
+.statistik_row{
+	display: flex;
+	flex-direction: column;
+}
+
+.statistik{
+	background: #303030;
+	position: absolute;
+	width: 22%;
+	height: 300px;
+	right: 15px;
+	border-radius: 10px;
+	color: #dddddd;
+}
+
+.statistik h1{
+	text-align: center;
+	border-bottom: 2px solid #dddddd;
+}
+
+.statistik p{
+	padding: 15px 20px;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
