@@ -51,9 +51,57 @@ body::-webkit-scrollbar-thumb{
 	border-bottom: 2px solid #dddddd;
 }
 
+.statistik p:before{
+	content: '1.';
+	display: block;
+	position: absolute;
+	left: 10px;
+}
+
 .statistik p{
 	padding: 15px 20px;
+	padding-left: 35px;
 	font-size: 20px;
 	font-weight: bold;
 	letter-spacing: 1.5px;
+}
+
+.statistik_nubmer_1{
+	animation: number-one 1s linear infinite alternate;
+}
+
+@keyframes number-one{
+	0%{
+		color: red;
+	}
+	50%{
+		color: blue;
+	}
+	100%{
+		color: red;
+	}
+}
+
+.statistik p:nth-child(3):before{
+	content: '2.';
+}
+
+.statistik p:nth-child(3){
+	padding-top: 0px;
+}
+
+.statistik p:nth-child(4):before{
+	content: '3.';
+}
+
+.statistik p:nth-child(4){
+	padding-top: 0px;
+}
+
+.statistik p:nth-child(5):before{
+	content: '4.';
+}
+
+.statistik p:nth-child(5){
+	padding-top: 0px;
 }
