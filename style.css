@@ -18,6 +18,12 @@ header p{
 	text-align: center;
 }
 
+.chat{
+	width: 1090px;
+	max-width: 100%;
+	height: 500px;
+}
+
 .chat_1{
 	margin-bottom: 20px;
 }
@@ -31,17 +37,28 @@ body::-webkit-scrollbar-thumb{
 	background: #fff;
 }
 
-.statistik_row{
+.row{
+	width: 98%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0px 10px;
+}
+
+.sidebar{
+	width: 380px;
+	height: 890px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .statistik{
+	position: relative;
+	padding: 0px 0px 20px 0px;
 	background: #303030;
-	position: absolute;
-	width: 22%;
-	height: 300px;
-	right: 15px;
+	width: 380px;
 	border-radius: 10px;
 	color: #dddddd;
 }
@@ -49,13 +66,14 @@ body::-webkit-scrollbar-thumb{
 .statistik h1{
 	text-align: center;
 	border-bottom: 2px solid #dddddd;
+	padding: 4px;
 }
 
 .statistik p:before{
 	content: '1.';
 	display: block;
 	position: absolute;
-	left: 10px;
+	left: 12px;
 }
 
 .statistik p{
@@ -104,4 +122,14 @@ body::-webkit-scrollbar-thumb{
 
 .statistik p:nth-child(5){
 	padding-top: 0px;
+}
+
+.interesting_photos{
+	width: 90%;
+}
+
+.interesting_photos img{
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 10px gray;
 }
